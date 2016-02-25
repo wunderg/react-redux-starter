@@ -1,0 +1,19 @@
+{
+  "name": "react-redux-starter",
+  "version": "1.0.0",
+  "description": "React-Redux-Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wunderg/react-redux-starter.git"
+  },
+  "author": "Oleg Umarov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wunderg/react-redux-starter/issues"
+  },
+  "homepage": "https://github.com/wunderg/react-redux-starter#readme"
+}
