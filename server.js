@@ -36,7 +36,7 @@ if (isDeveloping) {
     if (err) {
       console.log(err);
     }
-    console.log(`WebpackDevServer listening at port${WEBPACK_PORT}`);
+    console.log(`WebpackDevServer listening at port ${WEBPACK_PORT}`);
   });
 }
 
