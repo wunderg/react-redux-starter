@@ -9,8 +9,19 @@ class Home extends Component {
   render() {
     console.log(this);
     return (
-      <div className="">
-        <h1> Home </h1>
+      <div className="wrap container-fluid">
+        <div className="row around-xs">
+          <div className="col-xs-3 center-xs">
+            <div className="box">
+              <h1> Home </h1>
+            </div>
+          </div>
+          <div className="col-xs-3 center-xs">
+            <div className="box">
+              <h1> Home </h1>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
