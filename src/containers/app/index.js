@@ -1,15 +1,16 @@
 import React, { Component, PropTypes } from 'react';
-import { connect } from 'redux';
+import { connect } from 'react-redux';
 
 class App extends Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
 
   render() {
+    console.log(this);
     return (
-      <div className="">
-        <h1> App </h1>
+      <div classNameName="">
+        { this.props.children }
       </div>
     );
   }

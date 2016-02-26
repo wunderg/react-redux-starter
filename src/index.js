@@ -20,5 +20,6 @@ render(
         <IndexRoute component={Home} />
       </Route>
     </Router>
-  </Provider>
+  </Provider>,
+  document.getElementById('root')
 );

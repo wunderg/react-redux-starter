@@ -4,7 +4,7 @@ import createLogger from 'redux-logger';
 
 const logger = createLogger();
 const reducer = combineReducers({
-
+  state: (state = {}) => state
 });
 
 const createStoreWithMiddleware = applyMiddleware(
