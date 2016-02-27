@@ -7,6 +7,7 @@ import Colors from 'material-ui/lib/styles/colors';
 
 const style = {
   margin: 12,
+  paddingTop: 10,
   color: Colors.blue100
 };
 
@@ -39,8 +40,8 @@ class Home extends Component {
           <div className="col-xs-5 center-xs">
             <div className="box">
               <div className="">
-                <FlatButton label="Increment" onClick={ this.increment } primary={true} style={style} />
-                <FlatButton label="Decrement" onClick={ this.decrement } secondary={true} style={style} />
+                <FlatButton onClick={ this.increment } primary={true} style={style} label={<i className="fa fa-plus fa-2x"></i>} />
+                <FlatButton onClick={ this.decrement } secondary={true} style={style} label={<i className="fa fa-minus fa-2x"></i>} />
               </div>
             </div>
           </div>
