@@ -19,7 +19,6 @@ class App extends Component {
 
 
   render() {
-    // console.log(Colors);
     return (
       <div classNameName="">
         <Toolbar>
