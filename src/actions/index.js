@@ -3,17 +3,21 @@ export const DECREMENT = 'DECREMENT';
 export const RESET = 'RESET';
 
 export function increment(number) {
-  const data = number + 1;
   return {
     type: INCREMENT,
-    payload: data
+    payload: number
   };
 }
 
 export function decrement(number) {
-  const data = number - 1;
   return {
     type: DECREMENT,
-    payload: data
+    payload: number
   };
+}
+
+export function reset() {
+  return {
+    type: RESET,
+  }
 }
