@@ -10,7 +10,7 @@ const store = storeConfig();
 const style = {
   margin: 12,
   paddingTop: 10,
-  color: Colors.blue100
+  color: Colors.blue200
 };
 
 class Home extends Component {
@@ -40,7 +40,7 @@ class Home extends Component {
         <div className="row around-xs">
           <div className="col-xs-3 center-xs">
             <div className="box">
-              <h1>{this.props.count}</h1>
+              <h1 style={style}>{this.props.count}</h1>
             </div>
           </div>
         </div>
