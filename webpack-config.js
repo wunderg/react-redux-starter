@@ -1,7 +1,7 @@
-'use strict';
-
 var path = require('path');
 var webpack = require('webpack');
+var ProgressBarPlugin = require('progress-bar-webpack-plugin');
+var chalk = require('chalk');
 
 module.exports = {
   devtool: 'eval-source-map',
@@ -19,7 +19,11 @@ module.exports = {
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
-    new webpack.DefinePlugin({ 'process.env.NODE_ENV': JSON.stringify('development')
+    new webpack.DefinePlugin({ 'process.env.NODE_ENV': JSON.stringify('development'),
+    }),
+    new ProgressBarPlugin({
+      format: 'build [:bar]' + chalk.green.bold(':percent') + ' (:elapsed seconds)',
+      clear: false
     })
   ],
   resolve: {
@@ -31,11 +35,11 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
-        include: __dirname,
-        query: {
-          plugins: ['transform-runtime'],
-          presets: ['es2015', 'stage-0', 'react'],
-        }
+        include: __dirname
+        // query: {
+        //   plugins: ['transform-runtime'],
+        //   presets: ['es2015', 'stage-0', 'react'],
+        // }
       },
       {
         test: /\.json?$/,
@@ -48,7 +52,7 @@ module.exports = {
       },
       { test: /\.(jpe?g|png|gif|svg)$/,
         loader: 'url',
-        query: {limit: 10240}
+        query: { limit: 10240 }
       }
     ]
   }

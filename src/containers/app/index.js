@@ -10,7 +10,7 @@ const style = {
   color: Colors.blue100,
   marginLeft: 10,
   marginTop: 5
-}
+};
 
 class App extends Component {
   constructor(props) {
@@ -19,7 +19,7 @@ class App extends Component {
 
 
   render() {
-    console.log(Colors);
+    // console.log(Colors);
     return (
       <div classNameName="">
         <Toolbar>
