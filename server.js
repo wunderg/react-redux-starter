@@ -1,12 +1,12 @@
 import webpack from 'webpack';
 import webpackMiddleware from 'webpack-dev-middleware';
 import webpackHotMiddleware from 'webpack-hot-middleware';
+import webpackConfig from './webpack-config.js';
 
 import express from 'express';
 import path from 'path';
 import http from 'http';
 import bodyParser from 'body-parser';
-import webpackConfig from './webpack-config.js';
 
 const isProduction = process.env.NODE_ENV === 'production';
 const isDeveloping = !isProduction;
