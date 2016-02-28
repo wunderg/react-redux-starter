@@ -3,8 +3,6 @@ import { connect } from 'react-redux';
 import Colors from 'material-ui/lib/styles/colors';
 import Toolbar from 'material-ui/lib/toolbar/toolbar';
 import ToolbarGroup from 'material-ui/lib/toolbar/toolbar-group';
-import ToolbarSeparator from 'material-ui/lib/toolbar/toolbar-separator';
-import ToolbarTitle from 'material-ui/lib/toolbar/toolbar-title';
 
 const style = {
   color: Colors.blue100,
@@ -30,6 +28,12 @@ class App extends Component {
       </div>
     );
   }
+
 }
+
+App.propTypes = {
+  children: PropTypes.func
+};
+
 
 export default connect()(App);

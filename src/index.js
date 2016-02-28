@@ -12,7 +12,6 @@ import Home from './containers/home';
 
 
 const store = storeConfig();
-console.log(store);
 render(
   <Provider store={store}>
     <Router history={browserHistory}>

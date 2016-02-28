@@ -19,5 +19,5 @@ export function decrement(number) {
 export function reset() {
   return {
     type: RESET,
-  }
+  };
 }
