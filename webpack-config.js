@@ -33,7 +33,7 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        loader: 'babel-loader',
+        loader: 'react-hot!babel-loader',
         exclude: /node_modules/,
         include: __dirname
       },
